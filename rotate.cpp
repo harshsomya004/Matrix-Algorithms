@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+/*program to print matrix*/
 void print_mat(vector<vector<int>> arr, int n)
 {
     for(int i=0;i<n;i++)
@@ -14,7 +15,7 @@ void print_mat(vector<vector<int>> arr, int n)
     }
 }
 
-
+/*program to rotate the matrix by 90 degree*/
 vector<vector<int>> rotate_mat(vector<vector<int>> arr, int n)
 {
     vector<vector<int>> res = arr;
@@ -32,7 +33,9 @@ int main()
 { 
     int n,num ;
     vector<vector<int>> res;
+    cout<<"enter order of square matrix";
     cin>> n;
+    cout<<"enter elemets one by one";
     for(int i=0;i<n;i++)
     { 
         vector<int>temp;
